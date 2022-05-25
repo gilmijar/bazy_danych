@@ -1,0 +1,9 @@
+@import url(//fonts.googleapis.com/css?family=Lato);
+
+
+body {
+	background: GhostWhite;
+	background: linear-gradient(GhostWhite 0%, Azure 100%); 
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+
