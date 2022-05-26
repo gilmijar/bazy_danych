@@ -1,9 +1,17 @@
 @import url(//fonts.googleapis.com/css?family=Lato);
 
+html {
+    height: 100%;
+}
 
 body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background: GhostWhite;
 	background: linear-gradient(GhostWhite 0%, Azure 100%); 
 	font-family: 'Lato', Helvetica, sans-serif;
 }
+
 
