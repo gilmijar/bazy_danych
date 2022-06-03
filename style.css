@@ -21,6 +21,26 @@ body {
 	clear: left;
 }
 
+.header{
+	width: 260px;
+	background: solid GhostWhite;
+	position:fixed;
+	padding-left: 40px;
+	border-bottom: 2px solid grey;
+	z-index: 95;
+}
+
+.header>a{
+	display: block;
+	float: left;
+	margin: None 5px;
+	padding: 0 5px;
+	border-left: 2px solid grey;
+}
+
+.header>a:first-child{
+	border-left: none;
+}
 
 a		  { text-decoration: none}
 a:hover	{ text-decoration: underline}
