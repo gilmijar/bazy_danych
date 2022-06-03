@@ -7,8 +7,6 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background: GhostWhite;
 	background: linear-gradient(GhostWhite 0%, Azure 95%, #2F95CC 100%); 
 	background-repeat: no-repeat;
