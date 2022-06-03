@@ -3,7 +3,7 @@
 
 body {
 	height: 100%;
-	margin: 0;
+	margin-right: 2%;
 	background: GhostWhite;
 	background: linear-gradient(GhostWhite 0%, Azure 95%, #2F95CC 100%); 
 	background-repeat: no-repeat;
