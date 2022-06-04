@@ -15,7 +15,7 @@
 
 	<a href='./index.html'>Index</a>
 
-	<span class='insen'>Next</span>
+	<a href='./Zajęcia_3/Ćwiczenia.html'>Next</a>
 </div>
 
 
@@ -23,7 +23,12 @@
 <ul>
 <li><a href="./Zajęcia_1.html" title="Zajęcia 1" class="page">Zajęcia 1</a></li>
 <li><a href="./Zajęcia_2.html" title="Zajęcia 2" class="page">Zajęcia 2</a></li>
-<li><b>Zajęcia 3</b></li>
+<li><b>Zajęcia 3</b>
+<ul>
+<li><a href="./Zajęcia_3/Ćwiczenia.html" title="Ćwiczenia" class="page">Ćwiczenia</a></li>
+<li><a href="./Zajęcia_3/Dane.html" title="Dane" class="page">Dane</a></li>
+<li><a href="./Zajęcia_3/Tekst.html" title="Tekst" class="page">Tekst</a></li>
+</ul></li>
 </ul>
 
 </div>
@@ -45,6 +50,11 @@ Created piątek 03 czerwca 2022
 <br>
 
 <p>
+Język formalny służący dopasowaniu oraz zamianie fragmentów tekstu.<br>
+Pozwala na zdefiniowanie wyrażenia pasującego do wielu kombinacji znaków, które spełniają zadane kryteria, takie jak rodzaj znaku, ilość wystąpień, sekwencje sąsiednich znaków, oraz odwołanie do grup dopasowanych znaków.
+</p>
+
+<p>
 Przydatne strony<br>
 <ul>
 <li><a href="https://kobietydokodu.pl/4-wyrazenia-regularne/" title="https://kobietydokodu.pl/4-wyrazenia-regularne/" class="https">https://kobietydokodu.pl/4-wyrazenia-regularne/</a></li>
@@ -53,15 +63,66 @@ Przydatne strony<br>
 </ul>
 </p>
 
-<br>
-<br>
+<p>
+<ul>
+<li>dopasowanie
+<ul>
+<li>literały</li>
+<li>dowolny znak</li>
+<li>powtórzenia</li>
+<li>klasy znaków</li>
+<li>zbiory i zakresy</li>
+</ul>
+</li>
+<li>zamiany
+<ul>
+<li>uciekanie</li>
+<li>grupowanie i grupa 0</li>
+<li>odwołanie do grupy</li>
+<li>zamiany z uwzględnieniem sąsiedztwa</li>
+</ul>
+</li>
+<li>Notepad++</li>
+<li>MySQL</li>
+</ul>
+</p>
+
+<p>
+Wykonaj <a href="./Zajęcia_3/Ćwiczenia.html" title="ćwiczenia." class="page">ćwiczenia.</a>
+</p>
 
 <h1>Transakcje</h1>
 
 <br>
 <br>
 
-<h1>Procedury składowane</h1>
+<p>
+Czym są transakcje?<br>
+<div style='padding-left: 30pt'>
+Transakcja to grupa operacji SQL wykonywanych  razem, jako "pakiet" - operacje wewnątrz transakcji można zastosować (COMMIT) lub wycować (ROLLBACK)<br>
+Transakcja może służyć przy odczytach do zachowania spójności czytanych danych (np dwa zapytania SELECT na tabeli rozłożone w czasie, podczas możliwych zapisów do tej tabeli, w transakcji dadzą ten sam wynik. Dane dodane po rozpoczęciu transakcji nie będą widoczne dla zapytań wewnątrz niej)
+</div>
+Jak wyglądają w kodzie?
+</p>
+
+<pre>
+START TRANSACTION;
+SELECT name FROM products WHERE vendor = 'company X';
+UPDATE products SET item = name;
+COMMIT;
+</pre>
+
+<p>
+Do czego służą?<br>
+<div style='padding-left: 30pt'>
+Niedopuszczenie do utraty spójności danych.<br>
+Zabezpieczenie w przypadku długotrwałych zapisów.<br>
+Ochrona odczytów.<br>
+ACID: Atomicity, Consistency, Isolation, Durability
+</div>
+</p>
+
+<br>
 
 
 	</div>
