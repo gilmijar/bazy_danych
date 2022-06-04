@@ -56,13 +56,16 @@ Skopiuj tekst, oraz dane do osobnych plików tekstowych i pracuj na tych plikach
 <li>Znajdź w <a href="./Tekst.html" title="tekście" class="page">tekście</a> wielokrotne spacje.</li>
 <li>Znajdź w <a href="./Dane.html" title="danych" class="page">danych</a> wszystkie kraje, których nazwa zaczyna się od litery a i kończy na a.</li>
 <li>Znajdź w <a href="./Dane.html" title="danych" class="page">danych</a> wszystkie ciągi "cz" i "ch"</li>
-<li>Ile wierszy w <a href="./Dane.html" title="danych" class="page">danych</a> zawiera miesiące wiosenne: styczeń, luty lub marzec?</li>
+<li>Ile wierszy w <a href="./Dane.html" title="danych" class="page">danych</a> zawiera miesiące: styczeń, luty lub marzec?</li>
 <li>Zamień wszystkie nawiasy otwierające w <a href="./Dane.html" title="danych" class="page">danych</a> na nawiasy zamykające</li>
 <li>Usuń puste linie z <a href="./Tekst.html" title="tekstu." class="page">tekstu.</a></li>
 <li>Zmień format daty z yyyy-mm-dd na mm/dd/yyyy w <a href="./Dane.html" title="danych" class="page">danych</a>.</li>
-<li>Zmień SQL na CSV w <a href="./Dane.html" title="danych" class="page">danych</a>.</li>
 <li>zamień wszystkie przecinki na nawiasy zamykające w <a href="./Dane.html" title="danych" class="page">danych</a>.</li>
-<li>Zamień pierwszy nawias zamykający w linii na nawias otwierający.</li>
+<li>Zamień pierwszy nawias zamykający w linii na nawias otwierający. Włącznie z nawiasem w pierwszej linii.
+<ol type="a" start="1">
+<li>Próba uzycia wyrażenia lookbehind do znalezienia nawiasu, którego nie poprzedza inny nawias się nie powedzie, gdyż dopasowania lookbehind ne moga mieć zmiennej długości, a zatem wyrażenie <tt>(?&lt;!\).*)\)</tt>, choć poprawne nie zostanie wykonane z powodu części <tt>.*, która ma zmienną długość.</tt></li>
+</ol>
+</li>
 <li>W <a href="./Dane.html" title="danych" class="page">danych</a>, zamień wszystkie nawiasy zamykające, oprócz ostatniego w linii.</li>
 <li>Na tabeli <b>film</b> w polu <b>description</b> zamień przedimki "a" na "an" przed samogłoskami.</li>
 </ol>

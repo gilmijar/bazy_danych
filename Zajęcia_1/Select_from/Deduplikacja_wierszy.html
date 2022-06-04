@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Deduplikacja wierszy</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+    <link href="https://gilmijar.github.io/bazy_danych/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	<a href='../Select_from.html'>Prev</a>
+
+	<a href='../../index.html'>Index</a>
+
+	<a href='../Technologie_baz_danych.html'>Next</a>
+</div>
+
+
+<div class="menu">
+<ul>
+<li><a href="../../Zajęcia_1.html" title="Zajęcia 1" class="page">Zajęcia 1</a>
+<ul>
+<li><a href="../Baza.html" title="Baza" class="page">Baza</a></li>
+<li><a href="../Baza_Sakila.html" title="Baza Sakila" class="page">Baza Sakila</a></li>
+<li><a href="../Co_to_jest_baza_danych.html" title="Co to jest baza danych" class="page">Co to jest baza danych</a></li>
+<li><a href="../Select_from.html" title="Select from" class="page">Select from</a>
+<ul>
+<li><b>Deduplikacja wierszy</b></li>
+</ul>
+</li>
+<li><a href="../Technologie_baz_danych.html" title="Technologie baz danych" class="page">Technologie baz danych</a></li>
+</ul>
+</li>
+<li><a href="../../Zajęcia_2.html" title="Zajęcia 2" class="page">Zajęcia 2</a></li>
+<li><a href="../../Zajęcia_3.html" title="Zajęcia 3" class="page">Zajęcia 3</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>Deduplikacja wierszy <a name='Zajęcia 1:Select from:Deduplikacja wierszy'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created sobota 04 czerwca 2022
+</p>
+
+<p>
+Aby usunąć z zapytania duplikaty wierszy możemy użyć SELECT DISTINCT lub UNION
+</p>
+
+<pre>
+SELECT DISTINCT * 
+FROM table;
+</pre>
+
+<br>
+
+<p>
+lub
+</p>
+
+<pre>
+(SELECT * FROM table LIMIT 1)
+UNION
+SELECT * FROM table
+</pre>
+
+<br>
+
+<p>
+Nie należy używać UNION ALL w tym celu, gdyż to wyłączy usuwanie duplikatów.
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+
+</div>
+
+</body>
+</html>
