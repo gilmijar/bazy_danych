@@ -1,5 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Lato);
 
+@import url(//fonts.googleapis.com/css?family=Droid%20Sans%20Mono);
+
 
 body {
 	height: 100%;
@@ -13,20 +15,25 @@ body {
 
 .pages {
 	max-width: 1000px;
-	margin-left: 320px;
+	margin-left: max(20%, 170px);
 }
+
 .menu{
-	width: 300px;
+	max-width: 300px;
+	min-width: 150px;
+	width: 20%;
 	position:fixed;
 	clear: left;
 	margin-top: 20px;
 }
 
 .header{
-	width: 260px;
+	width: 14%;
+	max-width: 300px;
+	min-width: 150px;
 	background: solid GhostWhite;
 	position:fixed;
-	padding-left: 40px;
+	padding-left: 1.5%;
 	border-bottom: 2px solid grey;
 	z-index: 95;
 }
@@ -41,6 +48,16 @@ body {
 
 .header>*:first-child{
 	border-left: none;
+}
+
+
+tt, pre{
+	background: white;
+	font-family: 'Droid Sans Mono', mono;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 0 7px;
+  line-height: 150%;
 }
 
 a		  { text-decoration: none}
@@ -59,6 +76,7 @@ h3		 { color: #4e9a06; margin-bottom: 0 }
 h4		 { color: #4e9a06; margin-bottom: 0 }
 h5		 { color: #4e9a06; margin-bottom: 0 }
 p		  { margin-top: 0}
+
 span.zim-tag {
 	color: #ce5c00;
 }
