@@ -82,8 +82,22 @@ Przydatne strony<br>
 <li>zamiany z uwzględnieniem sąsiedztwa</li>
 </ul>
 </li>
-<li>Notepad++</li>
-<li>MySQL</li>
+<li>Notepad++
+<ul>
+<li>należy włączyć obsługę wyrażeń regularnych w okienku znajdź (i zamień)</li>
+</ul>
+</li>
+<li><a href="https://mariadb.com/kb/en/regexp/" title="MySQL" class="https">MySQL</a>
+<ul>
+<li><tt>REGEXP</tt> (synonim <tt>RLIKE</tt>), oraz jego zaprzeczenie <tt>NOT REGEXP</tt>
+<ul>
+<li><tt>SELECT * FROM film WHERE description REGEXP "stun{2}ing";</tt></li>
+</ul>
+</li>
+<li><tt>REGEXP_REPLACE(subject, pattern, replace)</tt> <i>- Podmienia wszystkie wystąpienia dopasowania.</i></li>
+<li><tt>REGEXP_INSTR(subject, pattern)</tt> <i>- Zwraca pozycję początku pierwszego wystąpienia dopasowania.</i></li>
+<li><tt>REGEXP_SUBSTR(subject,pattern)</tt> <i>- Zwraca dopasowany pod-ciąg znaków.</i> </li>
+</ul></li>
 </ul>
 </p>
 
@@ -118,11 +132,9 @@ Do czego służą?<br>
 Niedopuszczenie do utraty spójności danych.<br>
 Zabezpieczenie w przypadku długotrwałych zapisów.<br>
 Ochrona odczytów.<br>
-ACID: Atomicity, Consistency, Isolation, Durability
+<b>ACID</b>: Atomicity, Consistency, Isolation, Durability
 </div>
 </p>
-
-<br>
 
 
 	</div>
