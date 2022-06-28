@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	margin-right: 2%;
 	background: GhostWhite;
-	background: linear-gradient(GhostWhite 0%, Azure 95%, #2F95CC 150%); 
+	background: linear-gradient(GhostWhite 0%, Azure 95%, #2F95CC 100vh); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: 'Lato', Helvetica, sans-serif;
