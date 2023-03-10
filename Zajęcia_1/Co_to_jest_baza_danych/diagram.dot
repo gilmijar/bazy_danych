@@ -1,0 +1,13 @@
+digraph {
+nodesep=0.6
+splines=true
+node [shape=rectangle, style=filled, fillcolor=lightblue, fontname=arial, fontsize=10]
+Relacyjne
+BigData [label="BigData (niepełna semantyka baz relacyjnych)"]
+"Bazy danych" -> {Relacyjne, BigData, NoSQL}
+Relacyjne -> Układ -> {Tradycyjne, Temporalne, Kolumnowe}
+Relacyjne -> Dostawcy -> {Mysql, Postgres, "MS SQL Server", SQLite}
+NoSQL -> {"Bazy grafów", "Bazy dokumentów (json)", "Klucz-wartość", "Bazy grup kolumn", Obiektowe}
+Obiektowe -> "np. ZODB"
+BigData -> {Spark, Impala, Drill, "(etc)"}
+}
