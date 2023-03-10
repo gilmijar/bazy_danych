@@ -93,9 +93,9 @@ ul {list-style-image: none}
 
 span.insen { color: grey}
 
-hr{clear:both;}
+hr {clear:both;}
 
 img {
+	width: 100%;
 	max-width: 900px;
-	width: inherit;
 }
