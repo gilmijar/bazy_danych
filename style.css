@@ -95,3 +95,7 @@ span.insen { color: grey}
 
 hr{clear:both;}
 
+img {
+	max-width: 900px;
+	width: inherit;
+}
